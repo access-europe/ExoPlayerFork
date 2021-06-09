@@ -1,5 +1,65 @@
 [
   {
+    "name": "HbbTVHTMLAVTrack",
+    "samples": [
+      {
+        "name": "org.hbbtv_HTML50600",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50600/HTML50600.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "org.hbbtv_HTML50620",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50620/HTML50620.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "💀 org.hbbtv_HTML50625",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50625/HTML50625.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "org.hbbtv_HTML50630",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50630/HTML50630.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "💀 org.hbbtv_HTML50635",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50635/HTML50635.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "org.hbbtv_HTML50640",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50640/HTML50640.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "💀 org.hbbtv_HTML50730",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50730/HTML50730.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "💀 org.hbbtv_HTML50740",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50740/HTML50740.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "💀 org.hbbtv_HTML50760",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50760/HTML50760.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "💀 org.hbbtv_HTML50940",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50940/HTML50940.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "💀 org.hbbtv_HTML50950",
+        "uri": "https://chaos.repaircafereken.de/site/hbbtv/org.hbbtv_HTML50950/HTML50950.mpd",
+        "extension": "mpd"
+      }
+    ]
+  },
+  {
     "name": "YouTube DASH",
     "samples": [
       {
