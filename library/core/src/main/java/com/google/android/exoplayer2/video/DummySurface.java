@@ -201,6 +201,7 @@ public final class DummySurface extends Surface {
 
     @Override
     public boolean handleMessage(Message msg) {
+      Log.d("LXLXLX", "DummySurfaceThread.handleMessage");
       switch (msg.what) {
         case MSG_INIT:
           try {

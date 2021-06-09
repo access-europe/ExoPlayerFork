@@ -464,6 +464,7 @@ import java.util.UUID;
 
     @Override
     public void handleMessage(Message msg) {
+      Log.d("LXLXLX", "PostResponseHandler.handleMessage");
       switch (msg.what) {
         case MSG_PROVISION:
           onProvisionResponse(msg.obj);
@@ -493,6 +494,7 @@ import java.util.UUID;
 
     @Override
     public void handleMessage(Message msg) {
+      Log.d("LXLXLX", "PostRequestHandler.handleMessage");
       Object response;
       try {
         switch (msg.what) {

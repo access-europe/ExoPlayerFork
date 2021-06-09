@@ -20,6 +20,7 @@ import android.os.Handler.Callback;
 import android.os.Looper;
 import android.os.Message;
 import android.support.annotation.IntDef;
+import android.util.Log;
 import com.google.android.exoplayer2.BaseRenderer;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -311,6 +312,7 @@ public final class TextRenderer extends BaseRenderer implements Callback {
   @SuppressWarnings("unchecked")
   @Override
   public boolean handleMessage(Message msg) {
+    Log.d("LXLXLX", "TextRenderer.handleMessage");
     switch (msg.what) {
       case MSG_UPDATE_OUTPUT:
         invokeUpdateOutputInternal((List<Cue>) msg.obj);

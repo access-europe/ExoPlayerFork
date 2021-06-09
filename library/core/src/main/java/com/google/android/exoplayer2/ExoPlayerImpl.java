@@ -103,6 +103,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
     eventHandler = new Handler(eventLooper) {
       @Override
       public void handleMessage(Message msg) {
+        Log.d("LXLXLX", "ExoPlayerImpl.handleMessage");
         ExoPlayerImpl.this.handleEvent(msg);
       }
     };

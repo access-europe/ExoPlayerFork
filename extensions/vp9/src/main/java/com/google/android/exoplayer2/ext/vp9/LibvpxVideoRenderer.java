@@ -23,6 +23,7 @@ import android.os.SystemClock;
 import android.support.annotation.CallSuper;
 import android.support.annotation.IntDef;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.Surface;
 import com.google.android.exoplayer2.BaseRenderer;
 import com.google.android.exoplayer2.C;
@@ -614,6 +615,7 @@ public class LibvpxVideoRenderer extends BaseRenderer {
 
   @Override
   public void handleMessage(int messageType, Object message) throws ExoPlaybackException {
+    Log.d("LXLXLX", "LibvpxVideoRenderer.handleMessage");
     if (messageType == C.MSG_SET_SURFACE) {
       setOutput((Surface) message, null);
     } else if (messageType == MSG_SET_OUTPUT_BUFFER_RENDERER) {

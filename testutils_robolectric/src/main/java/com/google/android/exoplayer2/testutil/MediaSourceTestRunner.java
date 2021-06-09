@@ -26,6 +26,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.util.Pair;
+import android.util.Log;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.PlayerMessage;
 import com.google.android.exoplayer2.Timeline;
@@ -456,6 +457,7 @@ public class MediaSourceTestRunner {
     @Override
     @SuppressWarnings("unchecked")
     public boolean handleMessage(Message msg) {
+      Log.d("LXLXLX", "EventHandlingExoPlayer.handleMessage");
       PlayerMessage message = (PlayerMessage) msg.obj;
       try {
         message.getTarget().handleMessage(message.getType(), message.getPayload());

@@ -19,6 +19,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.util.SparseIntArray;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -461,6 +462,7 @@ public class ConcatenatingMediaSource extends CompositeMediaSource<MediaSourceHo
   @Override
   @SuppressWarnings("unchecked")
   public final void handleMessage(int messageType, Object message) throws ExoPlaybackException {
+    Log.d("LXLXLX", "ConcatenatingMediaSource.handleMessage");
     switch (messageType) {
       case MSG_ADD:
         MessageData<MediaSourceHolder> addMessage = (MessageData<MediaSourceHolder>) message;

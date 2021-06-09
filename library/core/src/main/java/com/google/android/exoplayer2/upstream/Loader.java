@@ -360,6 +360,7 @@ public final class Loader implements LoaderErrorThrower {
 
     @Override
     public void handleMessage(Message msg) {
+      Log.d("LXLXLX", "LoadTask.handleMessage");
       if (released) {
         return;
       }

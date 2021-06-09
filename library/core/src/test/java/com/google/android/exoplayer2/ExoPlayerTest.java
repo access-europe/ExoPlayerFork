@@ -19,6 +19,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.fail;
 
 import android.view.Surface;
+import android.util.Log;
 import com.google.android.exoplayer2.Player.DefaultEventListener;
 import com.google.android.exoplayer2.Player.EventListener;
 import com.google.android.exoplayer2.Timeline.Window;
@@ -1902,6 +1903,7 @@ public final class ExoPlayerTest {
         new FakeRenderer(Builder.VIDEO_FORMAT) {
           @Override
           public void handleMessage(int what, Object object) throws ExoPlaybackException {
+            Log.d("LXLXLX", "ExoPlayerTest.handleMessage");
             super.handleMessage(what, object);
             rendererMessages.add(what);
           }
@@ -2017,6 +2019,7 @@ public final class ExoPlayerTest {
 
     @Override
     public void handleMessage(SimpleExoPlayer player, int messageType, Object message) {
+      Log.d("LXLXLX", "PositionGrabbingMessageTarget.handleMessage");
       if (player != null) {
         windowIndex = player.getCurrentWindowIndex();
         positionMs = player.getCurrentPosition();

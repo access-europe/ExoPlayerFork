@@ -20,6 +20,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
 import android.support.annotation.IntDef;
+import android.util.Log;
 import com.google.android.exoplayer2.BaseRenderer;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -567,6 +568,7 @@ public abstract class SimpleDecoderAudioRenderer extends BaseRenderer implements
 
   @Override
   public void handleMessage(int messageType, Object message) throws ExoPlaybackException {
+    Log.d("LXLXLX", "SimpleDecoderAudioRenderer.handleMessage");
     switch (messageType) {
       case C.MSG_SET_VOLUME:
         audioSink.setVolume((Float) message);

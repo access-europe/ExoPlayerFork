@@ -22,6 +22,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.Choreographer;
 import android.view.Choreographer.FrameCallback;
 import android.view.Display;
@@ -315,6 +316,7 @@ public final class VideoFrameReleaseTimeHelper {
 
     @Override
     public boolean handleMessage(Message message) {
+      Log.d("LXLXLX", "VSyncSampler.handleMessage");
       switch (message.what) {
         case CREATE_CHOREOGRAPHER: {
           createChoreographerInstanceInternal();

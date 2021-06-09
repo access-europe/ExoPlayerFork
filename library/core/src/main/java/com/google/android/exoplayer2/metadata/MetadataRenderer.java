@@ -19,6 +19,7 @@ import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.Looper;
 import android.os.Message;
+import android.util.Log;
 import com.google.android.exoplayer2.BaseRenderer;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -178,6 +179,7 @@ public final class MetadataRenderer extends BaseRenderer implements Callback {
   @SuppressWarnings("unchecked")
   @Override
   public boolean handleMessage(Message msg) {
+    Log.d("LXLXLX", "MetadataRenderer.handleMessage");
     switch (msg.what) {
       case MSG_INVOKE_RENDERER:
         invokeRendererInternal((Metadata) msg.obj);

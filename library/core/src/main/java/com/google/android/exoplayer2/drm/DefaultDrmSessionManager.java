@@ -684,6 +684,7 @@ public class DefaultDrmSessionManager<T extends ExoMediaCrypto> implements DrmSe
 
     @Override
     public void handleMessage(Message msg) {
+      Log.d("LXLXLX", "MediaDrmHandler.handleMessage");
       byte[] sessionId = (byte[]) msg.obj;
       for (DefaultDrmSession<T> session : sessions) {
         if (session.hasSessionId(sessionId)) {

@@ -25,6 +25,7 @@ import android.media.MediaFormat;
 import android.media.audiofx.Virtualizer;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
@@ -548,6 +549,7 @@ public class MediaCodecAudioRenderer extends MediaCodecRenderer implements Media
 
   @Override
   public void handleMessage(int messageType, Object message) throws ExoPlaybackException {
+    Log.d("LXLXLX", "MediaCodecAudioRenderer.handleMessage");
     switch (messageType) {
       case C.MSG_SET_VOLUME:
         audioSink.setVolume((Float) message);

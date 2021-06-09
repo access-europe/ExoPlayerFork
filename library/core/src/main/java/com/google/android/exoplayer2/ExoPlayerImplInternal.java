@@ -280,6 +280,7 @@ import java.util.Collections;
   @SuppressWarnings("unchecked")
   @Override
   public boolean handleMessage(Message msg) {
+    Log.d("LXLXLX", "ExoPlayerImplInternal.handleMessage");
     try {
       switch (msg.what) {
         case MSG_PREPARE:
@@ -858,6 +859,7 @@ import java.util.Collections;
       return;
     }
     try {
+    Log.d("LXLXLX", "ExoPlayerImplInternal.deliverMessage");
       message.getTarget().handleMessage(message.getType(), message.getPayload());
     } finally {
       message.markAsProcessed(/* isDelivered= */ true);
