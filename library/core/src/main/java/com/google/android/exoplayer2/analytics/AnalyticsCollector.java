@@ -17,6 +17,7 @@ package com.google.android.exoplayer2.analytics;
 
 import android.net.NetworkInfo;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.Surface;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -416,6 +417,7 @@ public class AnalyticsCollector
       TrackGroupArray trackGroups, TrackSelectionArray trackSelections) {
     EventTime eventTime = generatePlayingMediaPeriodEventTime();
     for (AnalyticsListener listener : listeners) {
+      Log.d("LXLXLX", "AnalyticsCollector.onTracksChanged calling onTracksChanged");
       listener.onTracksChanged(eventTime, trackGroups, trackSelections);
     }
   }

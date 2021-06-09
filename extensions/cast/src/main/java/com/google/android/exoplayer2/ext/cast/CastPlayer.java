@@ -597,6 +597,7 @@ public final class CastPlayer implements Player {
     }
     if (updateTracksAndSelections()) {
       for (EventListener listener : listeners) {
+        Log.d("LXLXLX", "class.updateInternalState calling onTracksChanged");
         listener.onTracksChanged(currentTrackGroups, currentTrackSelection);
       }
     }

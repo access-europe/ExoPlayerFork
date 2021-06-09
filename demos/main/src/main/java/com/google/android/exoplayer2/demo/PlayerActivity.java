@@ -23,6 +23,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.View;
@@ -684,6 +685,7 @@ public class PlayerActivity extends Activity
     @Override
     @SuppressWarnings("ReferenceEquality")
     public void onTracksChanged(TrackGroupArray trackGroups, TrackSelectionArray trackSelections) {
+      Log.d("LXLXLX", "PlayerEventListener.onTracksChanged")
       updateButtonVisibilities();
       if (trackGroups != lastSeenTrackGroupArray) {
         MappedTrackInfo mappedTrackInfo = trackSelector.getCurrentMappedTrackInfo();

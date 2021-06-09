@@ -671,6 +671,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
     if (trackSelectorResultChanged) {
       trackSelector.onSelectionActivated(playbackInfo.trackSelectorResult.info);
       for (Player.EventListener listener : listeners) {
+        Log.d("LXLXLX", "ExoPlayerImpl.updatePlaybackInfo calling onTracksChanged");
         listener.onTracksChanged(
             playbackInfo.trackGroups, playbackInfo.trackSelectorResult.selections);
       }
