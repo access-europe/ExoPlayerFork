@@ -685,7 +685,7 @@ public class PlayerActivity extends Activity
     @Override
     @SuppressWarnings("ReferenceEquality")
     public void onTracksChanged(TrackGroupArray trackGroups, TrackSelectionArray trackSelections) {
-      Log.d("LXLXLX", "PlayerEventListener.onTracksChanged")
+      Log.d("LXLXLX", "PlayerEventListener.onTracksChanged");
       updateButtonVisibilities();
       if (trackGroups != lastSeenTrackGroupArray) {
         MappedTrackInfo mappedTrackInfo = trackSelector.getCurrentMappedTrackInfo();
