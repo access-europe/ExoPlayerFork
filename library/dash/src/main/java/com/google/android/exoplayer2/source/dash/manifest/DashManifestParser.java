@@ -288,6 +288,9 @@ public class DashManifestParser extends DefaultHandler
             selectionFlags, accessibilityDescriptors, segmentBase);
         contentType = checkContentTypeConsistency(contentType,
             getContentType(representationInfo.format));
+        if (-1 != id) {
+          representationInfo.format.id = Integer.toString(id);
+        }
         representationInfos.add(representationInfo);
       } else if (XmlPullParserUtil.isStartTag(xpp, "SegmentBase")) {
         segmentBase = parseSegmentBase(xpp, (SingleSegmentBase) segmentBase);

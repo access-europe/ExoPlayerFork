@@ -45,7 +45,7 @@ public final class Format implements Parcelable {
   public static final long OFFSET_SAMPLE_RELATIVE = Long.MAX_VALUE;
 
   /** An identifier for the format, or null if unknown or not applicable. */
-  public final @Nullable String id;
+  public @Nullable String id;
   /**
    * The average bandwidth in bits per second, or {@link #NO_VALUE} if unknown or not applicable.
    */
